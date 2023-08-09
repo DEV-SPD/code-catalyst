@@ -15,7 +15,7 @@ export const Hero = () => {
 
                 <div className='w-full h-full relative flex flex-col items-center justify-center pt-[4rem]'>
                     <div className='w-fit max-w-[90%]'>
-                        <h1 className=" text-white text-xl md:text-7xl leading-[3rem] md:leading-[5.9rem] tracking-[0.16rem] font-thin">
+                        <h1 className=" text-white text-xl sm:text-3xl md:text-5xl  lg:text-7xl leading-[3rem] md:leading-[5.9rem] tracking-[0.16rem] font-thin">
                             Protect Your Health And Keep
                             <br />
                             Your Immune to Stay
