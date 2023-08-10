@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Result = () => {
+export const Result = ({ result }) => {
     return (
-        <div>Result</div>
+        <>
+            Your result is {result.result}
+        </>
     )
 }
