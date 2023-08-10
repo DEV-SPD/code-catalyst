@@ -6,7 +6,7 @@ import { Diabetes } from '../Components/Diabetes'
 import { Heart } from '../Components/Heart'
 import { Kidney } from '../Components/Kidney'
 
-export const Input = ({ path }) => {
+export const Input = ({ path, setResult }) => {
     return (
         <>
             <Navbar />
@@ -15,7 +15,7 @@ export const Input = ({ path }) => {
                     ? (<Input1 />)
                     : ((path === "diabetes")
                         ?
-                        <Diabetes />
+                        <Diabetes setResult={setResult} />
                         : ((path === "heart")
                             ?
                             <Heart />

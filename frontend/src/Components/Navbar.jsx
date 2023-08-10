@@ -31,7 +31,7 @@ export const Navbar = () => {
                 (<div className={" flex justify-between items-center p-[1rem] fixed w-full h-[90px] z-20" + (color ? " bg-[rgba(0,0,0,0.85)] transition duration-[0.5s] " : "")}>
                     <h1 className={'text-[2rem] md:text-[1.5rem] text-white  font-semibold'}>
                         <Link to="/">
-                            OpenScience.AI
+                            HEALTHCARE.AI
                         </Link>
                     </h1>
                     <ul className={(click ? "flex md:flex-row flex-col justify-center items-center w-full h-[100vh] bg-[rgba(0,0,0,0.9)] left-0 absolute top-0 -z-[3] transition-all duration-[0.3s] md:w-auto md:h-auto md:bg-transparent md:relative md:left-0 md:top-0" : "flex md:flex-row flex-col justify-center items-center w-full h-[100vh] bg-[rgba(0,0,0,0.9)] left-[-100%] absolute top-0 -z-[3] transition-all duration-[0.3s] md:w-auto md:h-auto md:bg-transparent md:relative md:left-0 md:top-0")}>
@@ -60,7 +60,7 @@ export const Navbar = () => {
                 (<div className={" flex justify-between items-center p-[1rem] fixed w-full h-[90px] z-20" + (color ? " bg-[rgba(0,0,0,0.85)] transition duration-[0.5s] text-white" : " text-[#3A8F99]")}>
                     <h1 className={'text-[2rem] md:text-[1.5rem]  font-bold'}>
                         <Link to="/">
-                            OpenScience.AI
+                            HEALTHCARE.AI
                         </Link>
                     </h1>
                     <ul className={(click ? "flex md:flex-row flex-col justify-center items-center w-full h-[100vh] bg-[rgba(0,0,0,0.9)] left-0 absolute top-0 -z-[3] transition-all duration-[0.3s] md:w-auto md:h-auto md:bg-transparent md:relative md:left-0 md:top-0" : "flex md:flex-row flex-col justify-center items-center w-full h-[100vh] bg-[rgba(0,0,0,0.14)] left-[-100%] absolute top-0 -z-[3] transition-all duration-[0.3s] md:w-auto md:h-auto md:bg-transparent md:relative md:left-0 md:top-0")}>

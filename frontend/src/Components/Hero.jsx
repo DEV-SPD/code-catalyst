@@ -15,17 +15,18 @@ export const Hero = ({ onClick }) => {
 
                 <div className='w-full h-full relative flex flex-col items-center justify-center pt-[4rem]'>
                     <div className='w-fit max-w-[90%]'>
-                        <h1 className=" text-white text-xl sm:text-3xl md:text-5xl  lg:text-7xl leading-[3rem] md:leading-[5.9rem] tracking-[0.16rem] font-thin">
-                            Protect Your Health And Keep
+                        <h1 className=" text-white text-xl sm:text-3xl md:text-5xl  lg:text-7xl leading-[3rem] md:leading-[5.9rem] tracking-[0.16rem] md:font-thin">
+                            Revolutionizing
                             <br />
-                            Your Immune to Stay
+                            Healthcare
                             <br />
-                            Healthy
+                            AI-Powered Diagnostics
                         </h1>
-                        <p className='text-white text-sm md:text-lg md:leading-10 tracking-[0.1rem] lowercase'>
-                            We will help you in maintaining your health here we choose you a doctor who is
+                        <p className='text-white text-sm md:text-lg md:leading-10 tracking-[0.1rem] '>
+                            Hello, I am your AI-Powered Diagnostic System, your virtual partner in health.
                             <br />
-                            experienced and certified in his field
+                            With advanced artificial intelligence and data analysis,
+                            <br />I am here to assist you in understanding your health and well-being better than ever before.
                         </p>
                         <div className="buttons mt-10 md:mt-24 w-full flex flex-row justify-center" onClick={onClick}>
                             <div className=' border-white p-2 cursor-pointer hover:bg-[#ffffff66] border-solid text-white border-2 flex flex-row gap-2 hover:gap-4 hover:-translate-y-1 hover:scale-110 duration-300' onClick={onClick}>

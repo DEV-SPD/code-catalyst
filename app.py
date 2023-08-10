@@ -6,6 +6,20 @@ app = Flask(__name__, static_folder="frontend/build", static_url_path='')
 CORS(app)
 
 
+@app.route("/api/diabetes", methods=['POST'])
+def post_data():
+    if request.is_json:
+        data = request.json  # Get the JSON data from the request
+        # Process the data as needed (e.g., save it to a database)
+        num = data.get('num')
+        num = int(num)
+        print(type(num))
+        num = num * 2
+        return jsonify({'num': num}), 201
+    else:
+        return jsonify({'num': -1}), 400
+
+
 @app.route("/")
 def hello_world():
     return send_from_directory(app.static_folder, 'index.html')
@@ -48,6 +62,11 @@ def offer():
 
 @app.route("/tech")
 def tech():
+    return send_from_directory(app.static_folder, 'index.html')
+
+
+@app.route("/tech")
+def result():
     return send_from_directory(app.static_folder, 'index.html')
 
 
