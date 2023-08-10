@@ -12,6 +12,7 @@ export const Diabetes = ({ setResult }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
+            console.log(formData);
             const response = await fetch('/api/diabetes', {
                 method: 'POST',
                 headers: {
