@@ -36,5 +36,20 @@ def diabetes():
     return send_from_directory(app.static_folder, 'index.html')
 
 
+@app.route("/about")
+def about():
+    return send_from_directory(app.static_folder, 'index.html')
+
+
+@app.route("/offer")
+def offer():
+    return send_from_directory(app.static_folder, 'index.html')
+
+
+@app.route("/tech")
+def tech():
+    return send_from_directory(app.static_folder, 'index.html')
+
+
 if __name__ == "__main__":
     app.run(debug=True, port=8000)

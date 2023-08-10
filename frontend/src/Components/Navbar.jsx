@@ -38,15 +38,16 @@ export const Navbar = () => {
                         <li className='md:py-0 md:px-[1rem] px-0 py-[1rem]'>
                             <Link to="/works" className=' text-[2rem] md:text-[1.2rem] text-white  font-bold'> HOW IT WORKS </Link>
                         </li>
-                        <li className='md:py-0 md:px-[1rem] px-0 py-[1rem] '>
-                            <Link to="/About" className=' text-[2rem] md:text-[1.2rem] text-white font-bold'> OUR OFFERINGS </Link>
-                        </li>
-                        <li className='md:py-0 md:px-[1rem] px-0 py-[1rem] '>
-                            <Link to="/Project" className=' text-[2rem] md:text-[1.2rem] text-white font-bold'> ABOUT US </Link>
-                        </li>
                         <li className='md:py-0 md:px-[1rem] px-0 py-[1rem]'>
-                            <Link to="/Contact" className=' text-[2rem] md:text-[1.2rem] text-white font-bold'> CONTACT </Link>
+                            <Link to="/tech" className=' text-[2rem] md:text-[1.2rem] text-white font-bold'> TECHNOLOGY </Link>
                         </li>
+                        <li className='md:py-0 md:px-[1rem] px-0 py-[1rem] '>
+                            <Link to="/offer" className=' text-[2rem] md:text-[1.2rem] text-white font-bold'> OUR OFFERINGS </Link>
+                        </li>
+                        <li className='md:py-0 md:px-[1rem] px-0 py-[1rem] '>
+                            <Link to="/about" className=' text-[2rem] md:text-[1.2rem] text-white font-bold'> ABOUT US </Link>
+                        </li>
+
                     </ul>
                     <div className=' md:hidden' onClick={handleClick}>
                         {click ? (<FaTimes size={20} style={{ color: "#fff" }} />)
@@ -66,15 +67,16 @@ export const Navbar = () => {
                         <li className='md:py-0 md:px-[1rem] px-0 py-[1rem]'>
                             <Link to="/works" className={" text-[2rem] md:text-[1.2rem]  font-bold"}> HOW IT WORKS </Link>
                         </li>
-                        <li className='md:py-0 md:px-[1rem] px-0 py-[1rem] '>
-                            <Link to="/About" className=' text-[2rem] md:text-[1.2rem]   font-bold'> OUR OFFERINGS </Link>
-                        </li>
-                        <li className='md:py-0 md:px-[1rem] px-0 py-[1rem] '>
-                            <Link to="/Project" className=' text-[2rem] md:text-[1.2rem]  font-bold'> ABOUT US </Link>
-                        </li>
                         <li className='md:py-0 md:px-[1rem] px-0 py-[1rem]'>
-                            <Link to="/Contact" className=' text-[2rem] md:text-[1.2rem]  font-bold'> CONTACT </Link>
+                            <Link to="/tech" className=' text-[2rem] md:text-[1.2rem]  font-bold'> TECHNOLOGY </Link>
                         </li>
+                        <li className='md:py-0 md:px-[1rem] px-0 py-[1rem] '>
+                            <Link to="/offer" className=' text-[2rem] md:text-[1.2rem]   font-bold'> OUR OFFERINGS </Link>
+                        </li>
+                        <li className='md:py-0 md:px-[1rem] px-0 py-[1rem] '>
+                            <Link to="/about" className=' text-[2rem] md:text-[1.2rem]  font-bold'> ABOUT US </Link>
+                        </li>
+
                     </ul>
                     <div className=' md:hidden' onClick={handleClick}>
                         {click ? (<FaTimes size={20} style={{ color: "#fff" }} />)

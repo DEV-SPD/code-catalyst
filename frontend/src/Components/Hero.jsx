@@ -2,7 +2,7 @@ import React from 'react'
 
 import { BsArrowRight } from 'react-icons/bs'
 
-export const Hero = () => {
+export const Hero = ({ onClick }) => {
     // const style1 = {
     //     'backgroundImage': 'url("https://i.ibb.co/PZ0QYh5/Hero-image.jpg")',
     // }
@@ -27,10 +27,10 @@ export const Hero = () => {
                             <br />
                             experienced and certified in his field
                         </p>
-                        <div className="buttons mt-10 md:mt-24 w-full flex flex-row justify-center">
-                            <div className=' border-white p-2 cursor-pointer hover:bg-[#ffffff66] border-solid text-white border-2 flex flex-row gap-2 hover:gap-4 hover:-translate-y-1 hover:scale-110 duration-300'>
+                        <div className="buttons mt-10 md:mt-24 w-full flex flex-row justify-center" onClick={onClick}>
+                            <div className=' border-white p-2 cursor-pointer hover:bg-[#ffffff66] border-solid text-white border-2 flex flex-row gap-2 hover:gap-4 hover:-translate-y-1 hover:scale-110 duration-300' onClick={onClick}>
                                 Explore Technologies
-                                <div className=' flex items-center'>
+                                <div className=' flex items-center' onClick={onClick}>
                                     <BsArrowRight />
                                 </div>
 
