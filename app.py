@@ -11,8 +11,28 @@ def hello_world():
     return send_from_directory(app.static_folder, 'index.html')
 
 
-@app.route("/*")
-def result():
+@app.route("/works")
+def works():
+    return send_from_directory(app.static_folder, 'index.html')
+
+
+@app.route("/liver")
+def liver():
+    return send_from_directory(app.static_folder, 'index.html')
+
+
+@app.route("/kidney")
+def kidney():
+    return send_from_directory(app.static_folder, 'index.html')
+
+
+@app.route("/heart")
+def heart():
+    return send_from_directory(app.static_folder, 'index.html')
+
+
+@app.route("/diabetes")
+def diabetes():
     return send_from_directory(app.static_folder, 'index.html')
 
 
