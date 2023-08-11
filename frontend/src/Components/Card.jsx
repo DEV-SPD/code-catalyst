@@ -20,7 +20,7 @@ export const Card = ({ refe }) => {
                                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.ibb.co/QpXmdDS/liver.jpg" alt="blog" />
                                 <div className="p-6">
                                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Category</h2>
-                                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Liver Disease</h1>
+                                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Liver Disease Predictor</h1>
                                     <p className="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
                                     <div className="flex items-center flex-wrap ">
                                         <Link to="/liver" className="text-[#3A8799] inline-flex items-center md:mb-2 lg:mb-0 hover:bg-red-500 hover:bg-opacity-[0.1] hover:text-black rounded-lg">Predict Now
@@ -38,7 +38,7 @@ export const Card = ({ refe }) => {
                                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.ibb.co/B6hDXFv/diabetes.jpg" alt="diabetes" />
                                 <div className="p-6">
                                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Category</h2>
-                                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Diabetes</h1>
+                                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Diabetes Predictor</h1>
                                     <p className="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
                                     <div className="flex items-center flex-wrap ">
                                         <Link to="/diabetes" className="text-[#3A8799] inline-flex items-center md:mb-2 lg:mb-0 hover:bg-red-500 hover:bg-opacity-[0.1] hover:text-black rounded-lg">Predict Now
@@ -56,7 +56,7 @@ export const Card = ({ refe }) => {
                                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.ibb.co/L0N7FVn/kidney.jpg" alt="blog" />
                                 <div className="p-6">
                                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Category</h2>
-                                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Kidney Disease</h1>
+                                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Kidney Disease predictor</h1>
                                     <p className="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
                                     <div className="flex items-center flex-wrap ">
                                         <Link to="/kidney" className="text-[#3A8799] inline-flex items-center md:mb-2 lg:mb-0 hover:bg-red-500 hover:bg-opacity-[0.1] hover:text-black rounded-lg">Predict Now
@@ -74,7 +74,7 @@ export const Card = ({ refe }) => {
                                 <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.ibb.co/sKxmstR/heart.jpg" alt="diabetes" />
                                 <div className="p-6">
                                     <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Category</h2>
-                                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Heart Disease</h1>
+                                    <h1 className="title-font text-lg font-medium text-gray-900 mb-3">Heart Disease Predictor</h1>
                                     <p className="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
                                     <div className="flex items-center flex-wrap ">
                                         <Link to="/heart" className="text-[#3A8799] inline-flex items-center md:mb-2 lg:mb-0 hover:bg-red-500 hover:bg-opacity-[0.1] hover:text-black rounded-lg">Predict Now

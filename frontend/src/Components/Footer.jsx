@@ -16,7 +16,7 @@ export const Footer = () => {
                 <div className="shaddow absolute h-[50vh] md:h-[30vh] w-full bg-black opacity-[0.5] slate-700 -z-10" >
                 </div>
                 <div className="relative flex flex-col h-full max-w-[90%] items-center justify-center ">
-                    <div className="diseases flex flex-row flex-wrap gap-[6vw] text-white underline-offset-4 pt-[2vw]">
+                    <div className="diseases flex flex-row flex-wrap gap-[6vw] text-white underline-offset-4 justify-center pt-[2vw]">
                         <Link to="/liver">Liver Disease <hr /></Link>
                         <Link to="/diabetes">Diabetes <hr /></Link>
                         <Link to="/kidney">Kidney Disease <hr /></Link>

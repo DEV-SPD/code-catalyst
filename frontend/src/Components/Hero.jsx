@@ -8,8 +8,8 @@ export const Hero = ({ onClick }) => {
     // }
     return (
         <>
-            <div className='h-[60vh] md:h-[100vh] w-full '>
-                <div className="w-full h-[60vh] md:h-[100vh] absolute -z-10">
+            <div className='h-[70vh] md:h-[100vh] w-full '>
+                <div className="w-full h-[70vh] md:h-[100vh] absolute -z-10">
                     <img src="https://i.ibb.co/PZ0QYh5/Hero-image.jpg" alt="IntroImg" className="w-full h-full bg-cover bg-center object-cover" />
                 </div>
 
