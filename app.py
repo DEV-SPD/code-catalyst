@@ -4,31 +4,57 @@ from flask.helpers import send_from_directory
 import pickle
 
 app = Flask(__name__, static_folder="frontend/build", static_url_path='')
-CORS(app) 
+CORS(app)
 
-with open('diabetes','rb') as f:
- diabetes_model = pickle.load(f)
+with open('diabetes', 'rb') as f:
+    diabetes_model = pickle.load(f)
 
 
 @app.route("/api/diabetes", methods=['POST'])
-def post_data():     
-        Pregnancies = int(request.json.get('preg'))
-        Glucose = int(request.json.get('glu'))
-        BloodPressure = int(request.json.get('bp'))
-        SkinThickness = int(request.json.get('st'))
-        Insulin = int(request.json.get('ins'))
-        BMI = float(request.json.get('bmi'))
-        DiabetesPedigreeFunction = float(request.json.get('dpf'))
-        Age = int(request.json.get('age'))
-        
-        res = diabetes_model.predict([[Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age]]) 
-        
-        if(res[0]==0):
-         return jsonify({'result':0})
-        else:
-         return jsonify({'result':1})
-        
-        
+def post__diabetes_data():
+    Pregnancies = int(request.json.get('preg'))
+    Glucose = int(request.json.get('glu'))
+    BloodPressure = int(request.json.get('bp'))
+    SkinThickness = int(request.json.get('st'))
+    Insulin = int(request.json.get('ins'))
+    BMI = float(request.json.get('bmi'))
+    DiabetesPedigreeFunction = float(request.json.get('dpf'))
+    Age = int(request.json.get('age'))
+
+    res = diabetes_model.predict(
+        [[Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age]])
+
+    if (res[0] == 0):
+        return jsonify({'result': 0})
+    else:
+        return jsonify({'result': 1})
+
+
+@app.route("/api/heart", methods=['POST'])
+def post_heart_data():
+    res = 0
+    if (res[0] == 0):
+        return jsonify({'result': 0})
+    else:
+        return jsonify({'result': 1})
+
+
+@app.route("/api/kidney", methods=['POST'])
+def post_kidney_data():
+    res = 0
+    if (res[0] == 0):
+        return jsonify({'result': 0})
+    else:
+        return jsonify({'result': 1})
+
+
+@app.route("/api/kidney", methods=['POST'])
+def post_liver_data():
+    res = 0
+    if (res[0] == 0):
+        return jsonify({'result': 0})
+    else:
+        return jsonify({'result': 1})
 
 
 @app.route("/")
