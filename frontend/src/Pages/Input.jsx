@@ -12,16 +12,16 @@ export const Input = ({ path, setResult }) => {
             <Navbar />
             {
                 (path === "liver")
-                    ? (<Input1 />)
+                    ? (<Input1 setResult={setResult} />)
                     : ((path === "diabetes")
                         ?
                         <Diabetes setResult={setResult} />
                         : ((path === "heart")
                             ?
-                            <Heart />
+                            <Heart setResult={setResult} />
                             : ((path === "kidney")
                                 ?
-                                <Kidney />
+                                <Kidney setResult={setResult} />
                                 : <></>
                             )
                         )

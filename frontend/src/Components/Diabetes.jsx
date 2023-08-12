@@ -23,7 +23,18 @@ export const Diabetes = ({ setResult }) => {
 
             const data = await response.json();
             console.log(data); // Output the response from Flask backend
-            setResult(data);
+            function jsonConcat(o1, o2) {
+                for (var key in o2) {
+                    o1[key] = o2[key];
+                }
+                return o1;
+            }
+
+            var output = {};
+            output = jsonConcat(output, data);
+            output = jsonConcat(output, formData);
+            output = jsonConcat(output, { "disease": "diabetes" });
+            setResult(output);
 
         } catch (error) {
             console.error('Error:', error);

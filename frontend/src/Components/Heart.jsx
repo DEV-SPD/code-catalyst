@@ -30,10 +30,10 @@ export const Heart = () => {
                             <div className="field flex flex-wrap gap-3 lg:gap-0">
                                 <p className='w-full lg:w-[50%] capitalize'>Chest Pain Type</p>
                                 <select name="gender" autoComplete="country-name" className="block lg:w-[50%] w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
-                                    <option>Type 1</option>
-                                    <option>Type 2</option>
-                                    <option>Type 3</option>
-                                    <option>Type 4</option>
+                                    <option>Typical Angina</option>
+                                    <option>Atypical Angina</option>
+                                    <option>non-Anginal</option>
+                                    <option>Asymptomatic</option>
                                 </select>
                             </div>
                             <div className="field flex flex-wrap gap-3 lg:gap-0">
@@ -47,16 +47,16 @@ export const Heart = () => {
                                 <input type="text" name="age" autoComplete="given-age" className="block lg:w-[50%] w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3A8F99] sm:text-sm sm:leading-6 ps-2" />
                             </div>
                             <div className="field flex flex-wrap gap-3 lg:gap-0">
-                                <p className='w-full lg:w-[50%] capitalize'> fasting blood sugar &gt; 120 mg/dl
+                                <p className='w-full lg:w-[50%] '> Fasting Blood Sugar &gt; 120 mg/dl
                                 </p>
                                 <input type="text" name="age" autoComplete="given-age" className="block lg:w-[50%] w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3A8F99] sm:text-sm sm:leading-6 ps-2" />
                             </div>
                             <div className="field flex flex-wrap gap-3 lg:gap-0">
                                 <p className='w-full lg:w-[50%] capitalize'>resting electrocardiographic results</p>
                                 <select name="gender" autoComplete="country-name" className="block lg:w-[50%] w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
-                                    <option>0</option>
-                                    <option>1</option>
-                                    <option>2</option>
+                                    <option>Normal</option>
+                                    <option>Stt Abnormality</option>
+                                    <option>Lv Hypertrophy</option>
                                 </select>
                             </div>
                             <div className="field flex flex-wrap gap-3 lg:gap-0">
@@ -69,7 +69,7 @@ export const Heart = () => {
                                 <input type="text" name="age" autoComplete="given-age" className="block lg:w-[50%] w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3A8F99] sm:text-sm sm:leading-6 ps-2" />
                             </div>
                             <div className="field flex flex-wrap gap-3 lg:gap-0">
-                                <p className='w-full lg:w-[50%] capitalize'>oldpeak = ST depression induced by exercise relative to rest</p>
+                                <p className='w-full lg:w-[50%] capitalize'>ST depression induced by exercise relative to rest</p>
                                 <input type="text" name="age" autoComplete="given-age" className="block lg:w-[50%] w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3A8F99] sm:text-sm sm:leading-6 ps-2" />
                             </div>
                             <div className="field flex flex-wrap gap-3 lg:gap-0">
@@ -79,6 +79,14 @@ export const Heart = () => {
                             <div className="field flex flex-wrap gap-3 lg:gap-0">
                                 <p className='w-full lg:w-[50%] capitalize'>number of major vessels (0-3) colored by flourosopy</p>
                                 <input type="text" name="age" autoComplete="given-age" className="block lg:w-[50%] w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#3A8F99] sm:text-sm sm:leading-6 ps-2" />
+                            </div>
+                            <div className="field flex flex-wrap gap-3 lg:gap-0">
+                                <p className='w-full lg:w-[50%] capitalize'>Thal</p>
+                                <select name="gender" autoComplete="country-name" className="block lg:w-[50%] w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6">
+                                    <option>Normal</option>
+                                    <option>Fixed Defect</option>
+                                    <option>Reversible Defect</option>
+                                </select>
                             </div>
                             <div className="submit w-full flex justify-center">
                                 <button type="submit" class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 w-[50%]">
